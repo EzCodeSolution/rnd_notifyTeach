@@ -13,13 +13,6 @@ export class BaseUrlInterceptor implements HttpInterceptor  {
     constructor(){}
 
     intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
-        req.clone({
-            setHeaders: {
-                Authorization : `Bearer ${environment.lineApiKey}`,
-                ContentType : 'application/x-www-form-urlencoded',
-                AccessControlAllowOrigin : '*'
-            }
-        })
         var expression = /((([A-Za-z]{3,9}:(?:\/\/)?)(?:[\-;:&=\+\$,\w]+@)?[A-Za-z0-9\.\-]+|(?:www\.|[\-;:&=\+\$,\w]+@)[A-Za-z0-9\.\-]+)((?:\/[\+~%\/\.\w\-_]*)?\??(?:[\-\+=&;%@\.\w_]*)#?(?:[\.\!\/\\\w]*))?)/;
         const regex = new RegExp(expression);
         if (!regex.test(req.url)) {

@@ -4,14 +4,15 @@ import { HomeComponent } from './home.component';
 import { HomeRoutingModule } from './home-routing.module';
 
 import { HttpClientModule, HttpClient } from '@angular/common/http';
-
+import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 
 @NgModule({
   declarations: [HomeComponent],
   imports: [
     CommonModule,
     HomeRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    SweetAlert2Module
   ],
   providers: [HttpClientModule]
 })

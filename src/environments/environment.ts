@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  lineNotiUrl : 'https://notify-api.line.me/api/notify',
+  lineNotiUrl : 'http://localhost:3000',
   lineApiKey : 'PCliK3G0JimYbPVFsakd8ECt3F8pWfQGLOIT1zqQqnT',
 };
 

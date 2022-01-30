@@ -9,6 +9,9 @@ import { PreloaderComponent } from './preloader/preloader.component';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { BaseUrlInterceptor } from './components/pages/helper/base-url';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,8 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
     NgbModule,
     NgbPaginationModule, 
     NgbAlertModule,
-    HttpClientModule
+    HttpClientModule,ToastrModule,
+    BrowserAnimationsModule
   ],
   providers: [
     {provide: HTTP_INTERCEPTORS, useClass: BaseUrlInterceptor, multi:true}
