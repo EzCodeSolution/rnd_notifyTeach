@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  lineNotiUrl : 'https://notify-api.line.me/api/notify',
+  lineApiKey : 'PCliK3G0JimYbPVFsakd8ECt3F8pWfQGLOIT1zqQqnT',
 };
 
 /*

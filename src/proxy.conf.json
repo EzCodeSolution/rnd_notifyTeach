@@ -1,0 +1,7 @@
+{
+    "/api/*": {
+        "target": "https://notify-api.line.me/api/notify/'",
+        "secure": false,
+        "logLevel": "debug"
+    }
+}

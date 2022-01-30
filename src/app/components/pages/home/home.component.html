@@ -1,0 +1,92 @@
+<header id="header" class="fixed-top d-flex align-items-center header-transparent header-scrolled">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <h1><a href="index.html"><span>Alert FAQ</span></a></h1>
+      </div>
+
+      <nav id="navbar" class="navbar">
+  
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header>
+
+
+  <section id="features" class="features" style="padding-top:90px">
+    <div class="container">
+
+      <div class="section-title aos-init aos-animate" data-aos="fade-up">
+        <h2>ระบบ</h2>
+        <p>แจ้งเตือนคุณครู</p>
+      </div>
+
+      <div class="row aos-init aos-animate" data-aos="fade-left">
+        <div class="col-lg-3 col-md-4" style="  cursor: pointer;">
+          <div class="icon-box aos-init aos-animate"  (click)="onSend('slow')" data-aos="zoom-in" data-aos-delay="50">
+            <i class="fas fa-exclamation-triangle" style="color: #ffbb2c;"></i>
+            <h3>ช้าลงหน่อย</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4 mt-md-0"  style="  cursor: pointer;">
+          <div class="icon-box aos-init aos-animate" (click)="onSend('miss')" data-aos="zoom-in" data-aos-delay="100">
+            <i class="fas fa-hand-paper" style="color: #5578ff;"></i>
+            <h3>ไม่ทัน</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4 mt-md-0"  style="  cursor: pointer;">
+          <div class="icon-box aos-init aos-animate" (click)="onSend('again')"  data-aos="zoom-in" data-aos-delay="150">
+            <i class="fas fa-history" style="color: #e80368;"></i>
+            <h3>อธิบายอีกรอบ</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4 mt-lg-0"  style="  cursor: pointer;">
+          <div class="icon-box aos-init aos-animate" (click)="onSend('noprom')"  data-aos="zoom-in" data-aos-delay="200">
+            <i class="fas fa-thumbs-up" style="color: #e361ff;"></i>
+            <h3>ไม่มีปัญหา!</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4"  style="  cursor: pointer;">
+          <div class="icon-box aos-init aos-animate" (click)="onSend('understand')"  data-aos="zoom-in" data-aos-delay="250">
+            <i class="fas fa-check" style="color: #47aeff;"></i>
+            <h3>เข้าใจแล้ว!</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4"  style="  cursor: pointer;">
+          <div class="icon-box aos-init aos-animate" (click)="onSend('gonext')"  data-aos="zoom-in" data-aos-delay="300">
+            <i class="fas fa-step-forward" style="color: #ffa76e;"></i>
+            <h3>ไปต่อได้เลย!</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="features" style="padding-top:10px">
+    <div class="container">
+      <div class="section-title aos-init aos-animate" data-aos="fade-up">
+        <h2>ถามคำถาม</h2>
+      </div>
+    <div class="row">
+        <div class="col-md-9" style="margin: 5px;"><input type="text" class="form form-control" placeholder="คำถามของนักเรียน"></div>
+        <div class="col-md-3" style="margin: 5px;"><button class="btn btn-primary form-control">ส่งคำถาม</button></div>
+    </div>
+    </div>
+  </section>
+
+
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        © Copyright <strong><span>Bootslander</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/bootslander-free-bootstrap-landing-page-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer>
