@@ -38,7 +38,7 @@ export class LineNotifyServiceService {
     let settime = new Date().getMinutes() - lastSend;
     if (countSend >= 3 && settime < 2) {
       return true;
-    } else if (countSend >= 3 && settime >= 2) {
+    } else if (countSend >= 3 && settime >= 2 && settime !< 0) {
       localStorage.setItem("countSend", "0")
       localStorage.setItem("lastSend", "")
       this.errorData = ""
